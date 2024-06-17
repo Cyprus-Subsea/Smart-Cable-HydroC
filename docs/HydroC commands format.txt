@@ -1,0 +1,22 @@
+CO2
+START:x,y,z,k
+x  (0-1) pump stop after zero mode 1-stop pump 0-not change
+y  (0-2) zero mode after dive(1) or climb (2) or never (0)
+z  (0-3) data collecting profile ID
+k  (a,b) a-dive b-climb
+
+
+STOP:k
+k  (a,b) a-dive b-climb
+
+
+CH4
+START:x,y,z,k
+x  (0-1) pump stop after climb 1-stop pump 0-not change
+y  (0)   no actions, for backward compatibility
+z  (0-3) data collecting profile ID
+k  (a,b) a-dive b-climb
+
+
+STOP:k
+k  (a,b) a-dive b-climb

@@ -1,0 +1,35 @@
+$CH_PUMP: 
+0: Do not change the pump status
+1: Turn the pump off. This is used at the end of the mission in order to turn off the pump in the last dive, just before recovering the glider so as to avoid running the pump in air.
+$CH_DATA:
+0: No data
+1: Get “Critical” data in the following order:
+ds4.pCH4_corr
+ds4.P_IN
+ds4.runtime
+ts4.T_gas
+ts4.rH_gas
+2: Get “Nice to have” data in following order:
+ds4.pCH4_corr
+ds4.P_IN
+ds4.runtime
+ts4.T_gas
+ts4.rH_gas
+3: Get “Ideal” data in following order:
+ds4.p_TDLAS
+ds4.P_IN
+ds4.pCH4_corr
+ds4.T_sensor
+ds4.xCH4_corr   
+ds4.runtime
+ds4.date
+ds4.time
+ts4.rH_gas
+ts4.T_gas
+ts4.T_control
+
+Errors:
+P_in 1100 mbar max 
+%rH_gas  85% max
+T_control must stay around +/- 0.5 degree of set temperature. (28°C)
+P_pump 0.3-1.6 W, outside of this may indicate a problem.
